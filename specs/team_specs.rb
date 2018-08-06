@@ -22,6 +22,10 @@ class TeamTest < MiniTest::Test
     team = Team.new("Team1", ["Filip", "Ben"], "Craig")
     assert_equal("Craig", team.get_team_coach)
   end
-
+  def test_change_coach
+    team = Team.new("Team1", ["Filip", "Ben"], "Craig")
+    team.change_coach("Jose")
+    assert_equal("Jose", team.get_team_coach)
+  end
 
 end

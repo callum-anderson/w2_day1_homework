@@ -16,4 +16,9 @@ class Team
   def get_team_coach()
     return @coach
   end
+
+  def change_coach(new_coach)
+    @coach = new_coach
+
+  end
 end
