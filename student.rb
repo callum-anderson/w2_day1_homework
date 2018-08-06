@@ -16,4 +16,7 @@ class Student
    @name = new_name
  end
 
+ def change_cohort(new_cohort)
+   @cohort = new_cohort
+ end
 end
