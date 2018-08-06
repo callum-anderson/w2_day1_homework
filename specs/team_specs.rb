@@ -40,4 +40,10 @@ class TeamTest < MiniTest::Test
     has_player = team.find_player_by_name("Filip")
     assert_equal(true, has_player)
   end
+  def test_win
+    team = Team.new("Team1", ["Filip", "Ben"], "Craig")
+    initial_points = team.points
+    team.win?(true)
+    assert_equal(initial_points + 1, team.points)
+  end
 end
