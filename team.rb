@@ -12,4 +12,8 @@ class Team
   def get_team_players()
     return @players
   end
+
+  def get_team_coach()
+    return @coach
+  end
 end
