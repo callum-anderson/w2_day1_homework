@@ -25,4 +25,8 @@ def test_change_cohort
   assert_equal("E23", student.get_cohort)
 end
 
+def test_student_can_talk
+  student = Student.new("Filip", "E24")
+  assert_equal("I can talk!", student.talk)
+end
 end
