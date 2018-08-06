@@ -33,7 +33,11 @@ class TeamTest < MiniTest::Test
     team = Team.new("Team1", ["Filip", "Ben"], "Craig")
     team.add_player("Cristiano")
     assert_equal(["Filip", "Ben", "Cristiano"], team.players)
-
   end
 
+  def test_find_player_by_name
+    team = Team.new("Team1", ["Filip", "Ben"], "Craig")
+    has_player = team.find_player_by_name("Filip")
+    assert_equal(true, has_player)
+  end
 end

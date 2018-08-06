@@ -9,8 +9,12 @@ class Team
 
   def add_player(new_player)
     @players.push(new_player)
-
   end
+
+def find_player_by_name(name)
+  return @players.include?(name)
+end
+
 
   # def get_team_name()
   #   return @team_name
